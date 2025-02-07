@@ -868,5 +868,52 @@
 	{
 		"key": "ctrl+backspace",
 		"command": "workbench.action.closeActiveEditor"
+	},
+	{
+		"key": "ctrl+k ctrl+a",
+		"command": "-continue.toggleTabAutocompleteEnabled",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+m",
+		"command": "-continue.toggleFullScreen",
+		"when": "!terminalFocus"
+	},
+	{
+		"key": "ctrl+k ctrl+k",
+		"command": "-editor.action.defineKeybinding",
+		"when": "resource == 'vscode-userdata:/c%3A/Users/i/AppData/Roaming/Code/User/keybindings.json'"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "-workbench.action.terminal.goToRecentDirectory",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+shift+p",
+		"command": "-workbench.action.quickOpenNavigatePreviousInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "-actions.find",
+		"when": "editorFocus || editorIsOpen"
+	},
+	{
+		"key": "ctrl+f",
+		"command": "editor.action.startFindReplaceAction"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "-editor.action.startFindReplaceAction"
+	},
+	{
+		"key": "shift+delete",
+		"command": "-editor.action.clipboardCutAction"
 	}
 ]
