@@ -42,7 +42,6 @@
 	"editor.bracketPairColorization.enabled": true,
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
-	"editor.scrollbar.vertical": "hidden",
 	"window.density.editorTabHeight": "compact",
 	"workbench.activityBar.location": "top",
 	"workbench.colorTheme": "Catppuccin Mocha",
@@ -55,15 +54,16 @@
 	"editor.cursorBlinking": "expand",
 	"editor.cursorStyle": "line-thin",
 	"editor.cursorSmoothCaretAnimation": "explicit",
-	"editor.lineHeight": 23,
+	"editor.lineHeight": 24,
 	"editor.fontSize": 14,
+	"editor.fontWeight": 320,
 	"editor.fontLigatures": false,
-	"editor.fontFamily": "Consolas, 'Courier New', monospace",
-	"editor.inlayHints.fontFamily": "PragmataPro",
+	"editor.fontFamily": "Cascadia Mono",
+	"editor.inlayHints.fontFamily": "Cascadia Mono",
 
 	//Terminal
-	"terminal.integrated.fontFamily": "Iosevka NFM",
-	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.fontFamily": "Cascadia Mono",
+	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.tabs.enabled": true,
 
 	//Explorer
@@ -166,7 +166,6 @@
 	"files.autoSave": "afterDelay",
 	"workbench.productIconTheme": "fluent-icons",
 	"git.confirmSync": false,
-	"chat.commandCenter.enabled": false,
 	"gitlens.graph.minimap.additionalTypes": [
 		"localBranches",
 		"stashes",
@@ -175,6 +174,6 @@
 		"tags"
 	],
 	"gitlens.graph.minimap.dataType": "lines",
-	"window.menuBarVisibility": "compact",
-	"window.commandCenter": false
+	"window.commandCenter": false,
+	"window.menuBarVisibility": "compact"
 }

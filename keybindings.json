@@ -915,5 +915,9 @@
 	{
 		"key": "shift+delete",
 		"command": "-editor.action.clipboardCutAction"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.toggleSidebarVisibility"
 	}
 ]
