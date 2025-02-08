@@ -56,13 +56,13 @@
 	"editor.cursorSmoothCaretAnimation": "explicit",
 	"editor.lineHeight": 24,
 	"editor.fontSize": 14,
-	"editor.fontWeight": 320,
+	"editor.fontWeight": 350,
 	"editor.fontLigatures": false,
-	"editor.fontFamily": "Cascadia Mono",
-	"editor.inlayHints.fontFamily": "Cascadia Mono",
+	"editor.fontFamily": "JetBrains Mono, Cascadia Mono",
+	"editor.inlayHints.fontFamily": "JetBrains Mono, Cascadia Mono",
 
 	//Terminal
-	"terminal.integrated.fontFamily": "Cascadia Mono",
+	"terminal.integrated.fontFamily": "JetBrains Mono, Cascadia Mono",
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.tabs.enabled": true,
 
@@ -158,7 +158,6 @@
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	// Не открывать репозиторий в родительских папках
 	"git.openRepositoryInParentFolders": "never",
-
 	// Поведение при обнаружении нескольких определений
 	"editor.gotoLocation.multipleDefinitions": "goto",
 	// Скрыть подсказку в пустом редакторе

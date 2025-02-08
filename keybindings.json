@@ -919,5 +919,9 @@
 	{
 		"key": "ctrl+b",
 		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+numpad_add",
+		"command": "-workbench.action.zoomIn"
 	}
 ]
