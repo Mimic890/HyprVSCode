@@ -4,6 +4,7 @@
 * Open file: `Ctrl + Shift + D`
 * New folder: `Alt + F`
 * New file: `Alt + D`
+* Open Terminal: `Shift + Space`
 * Save all files: `Ctrl + S`
 * Save file: `Ctrl + Alt + S`
 * Save As: `Ctrl + Shift + S`
