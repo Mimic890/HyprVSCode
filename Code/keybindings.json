@@ -923,5 +923,136 @@
 	{
 		"key": "ctrl+numpad_add",
 		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "opensshremotes.openEmptyWindow"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-workbench.action.chat.runInTerminal",
+		"when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-workbench.action.terminal.chat.insertCommand",
+		"when": "terminalChatResponseContainsCodeBlock && terminalHasBeenCreated && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks || terminalChatResponseContainsCodeBlock && terminalProcessSupported && !terminalChatActiveRequest && !terminalChatResponseContainsMultipleCodeBlocks"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-workbench.action.terminal.chat.insertFirstCommand",
+		"when": "terminalChatResponseContainsMultipleCodeBlocks && terminalHasBeenCreated && !terminalChatActiveRequest || terminalChatResponseContainsMultipleCodeBlocks && terminalProcessSupported && !terminalChatActiveRequest"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-notebook.cell.execute",
+		"when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-notebook.cell.quitEdit",
+		"when": "inputFocus && notebookEditorFocused && !inlineChatFocused && notebookCellType == 'markup'"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-editor.action.replaceAll",
+		"when": "editorFocus && findWidgetVisible"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-search.action.replaceAll",
+		"when": "replaceActive && searchViewletVisible && !findWidgetVisible"
+	},
+	{
+		"key": "ctrl+alt+enter",
+		"command": "-workbench.action.chat.sendToChatEditing",
+		"when": "chatEditingParticipantRegistered && chatInputHasText && chatIsEnabled && chatRequestIsPaused && !chatInputHasAgent && chatLocation != 'editing-session' && chatLocation != 'editor' || chatEditingParticipantRegistered && chatInputHasText && chatIsEnabled && !chatInputHasAgent && !chatSessionRequestInProgress && chatLocation != 'editing-session' && chatLocation != 'editor' || chatEditingParticipantRegistered && chatInstructionsAttached && chatIsEnabled && chatRequestIsPaused && !chatInputHasAgent && chatLocation != 'editing-session' && chatLocation != 'editor' || chatEditingParticipantRegistered && chatInstructionsAttached && chatIsEnabled && !chatInputHasAgent && !chatSessionRequestInProgress && chatLocation != 'editing-session' && chatLocation != 'editor'"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "python.execInTerminal-icon"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-chatEditor.action.acceptHunk",
+		"when": "chat.hasEditorModifications && editorFocus && hasUndecidedChatEditingResource && !chatSessionRequestInProgress"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-continue.acceptDiff",
+		"when": "continue.diffVisible"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-editor.action.insertLineBefore",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-notebook.cell.insertCodeCellAbove",
+		"when": "notebookCellListFocused && !inputFocus"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-list.toggleSelection",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-search.action.replaceAllInFile",
+		"when": "fileMatchFocus && isEditableItem && replaceActive && searchViewletVisible"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-search.action.replaceAllInFolder",
+		"when": "folderMatchFocus && isEditableItem && replaceActive && searchViewletVisible"
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "-workbench.action.chat.sendToNewChat",
+		"when": "chatInputHasText && chatRequestIsPaused && inChatInput || chatInputHasText && inChatInput && !chatSessionRequestInProgress || chatInstructionsAttached && chatRequestIsPaused && inChatInput || chatInstructionsAttached && inChatInput && !chatSessionRequestInProgress"
+	},
+	{
+		"key": "shift+k",
+		"command": "workbench.action.terminal.clear"
+	},
+	{
+		"key": "alt+k",
+		"command": "-editor.action.accessibilityHelpConfigureKeybindings",
+		"when": "accessibilityHelpIsShown && accessibleViewHasUnassignedKeybindings"
+	},
+	{
+		"key": "alt+k",
+		"command": "-keybindings.editor.recordSearchKeys",
+		"when": "inKeybindings && inKeybindingsSearch"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-continue.focusContinueInput"
+	},
+	{
+		"key": "ctrl+alt+i",
+		"command": "-workbench.action.chat.open"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "workbench.action.chat.open"
+	},
+	{
+		"key": "shift+enter",
+		"command": "code-runner.run"
+	},
+	{
+		"key": "ctrl+alt+n",
+		"command": "-code-runner.run"
+	},
+	{
+		"key": "shift+enter",
+		"command": "-editor.action.previousMatchFindAction",
+		"when": "editorFocus && findInputFocussed"
+	},
+	{
+		"key": "ctrl+shift+p",
+		"command": "workbench.action.showCommands"
 	}
 ]
