@@ -5,11 +5,10 @@
 	"editor.folding": false,
 	"editor.insertSpaces": false,
 	"editor.smoothScrolling": false,
-	"editor.minimap.enabled": false,
 	"editor.detectIndentation": true,
 	"editor.suggestSelection": "first",
 	"editor.multiCursorModifier": "ctrlCmd",
-	"window.zoomLevel": 0.001,
+	"window.zoomLevel": 0.02,
 
 	"workbench.editor.showTabs": "multiple",
 
@@ -43,12 +42,8 @@
 	"editor.glyphMargin": false,
 	"editor.scrollbar.horizontal": "hidden",
 	"window.density.editorTabHeight": "compact",
-	"workbench.activityBar.location": "top",
-	"workbench.colorTheme": "Catppuccin Mocha",
 	"editor.accessibilitySupport": "off",
-	"workbench.layoutControl.enabled": false,
 	"symbols.hidesExplorerArrows": false,
-	"workbench.iconTheme": "catppuccin-mocha",
 
 	// Cursor
 	"editor.cursorBlinking": "expand",
@@ -56,13 +51,13 @@
 	"editor.cursorSmoothCaretAnimation": "explicit",
 	"editor.lineHeight": 24,
 	"editor.fontSize": 14,
-	"editor.fontWeight": 320,
+	"editor.fontWeight": 350,
 	"editor.fontLigatures": false,
-	"editor.fontFamily": "Cascadia Mono",
-	"editor.inlayHints.fontFamily": "Cascadia Mono",
+	"editor.fontFamily": "JetBrains Mono, Cascadia Mono",
+	"editor.inlayHints.fontFamily": "JetBrains Mono, Cascadia Mono",
 
 	//Terminal
-	"terminal.integrated.fontFamily": "Cascadia Mono",
+	"terminal.integrated.fontFamily": "JetBrains Mono, Cascadia Mono",
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.tabs.enabled": true,
 
@@ -142,6 +137,7 @@
 		"**/.expo": true,
 		"**/.expo-shared": true,
 		"**/.idea": true,
+		"**/node_modules": true,
 		"**/.next": true,
 		"**/.nuxt": true,
 		"**/dist": true
@@ -158,12 +154,10 @@
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	// Не открывать репозиторий в родительских папках
 	"git.openRepositoryInParentFolders": "never",
-
 	// Поведение при обнаружении нескольких определений
 	"editor.gotoLocation.multipleDefinitions": "goto",
 	// Скрыть подсказку в пустом редакторе
 	"workbench.editor.empty.hint": "hidden",
-	"files.autoSave": "afterDelay",
 	"workbench.productIconTheme": "fluent-icons",
 	"git.confirmSync": false,
 	"gitlens.graph.minimap.additionalTypes": [
@@ -174,6 +168,44 @@
 		"tags"
 	],
 	"gitlens.graph.minimap.dataType": "lines",
+	"php.executables": {},
+	"[php]": {
+		"editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+	},
+	"liveServer.settings.donotShowInfoMsg": true,
+	"files.autoSave": "afterDelay",
+	"workbench.activityBar.location": "top",
+	"window.menuBarVisibility": "compact",
+	"workbench.layoutControl.enabled": false,
+	"cmake.pinnedCommands": [
+		"workbench.action.tasks.configureTaskRunner",
+		"workbench.action.tasks.runTask"
+	],
+	"[c]": {
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"workbench.navigationControl.enabled": false,
+	"chat.commandCenter.enabled": false,
 	"window.commandCenter": false,
-	"window.menuBarVisibility": "compact"
+	"[dockercompose]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"debug.onTaskErrors": "debugAnyway",
+	"geminicodeassist.project": "miprogect-452310",
+	"redhat.telemetry.enabled": true,
+	"diffEditor.codeLens": true,
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "HyprPink-dark"
 }
